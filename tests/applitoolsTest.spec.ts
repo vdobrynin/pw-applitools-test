@@ -9,5 +9,4 @@ test('Applitools VisualTesting', async ({ page, eyes }) => {
   await page.getByText('Form Layouts').click()
 
   await eyes.check('Form Layouts Page')
-
 });
