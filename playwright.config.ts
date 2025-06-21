@@ -4,7 +4,7 @@ import { MatchLevel, StitchMode } from '@applitools/eyes-playwright';
 
 export default defineConfig<EyesFixture>({
   // reporter: 'html',                                      // #75.1 first test
-  reporter: '@applitools/eyes-playwright/reporter',  // #75.1 then change
+  reporter: '@applitools/eyes-playwright/reporter',     // #75.1 then change
 
   use: {
     /* Configuration for Eyes VisualAI */
