@@ -23,6 +23,19 @@ export default defineConfig<EyesFixture>({
       // matchTimeout: '0',
       // waitBeforeScreenshots: 50,
       // saveNewTests: true,
+
+      type: 'ufg',                    // added at #76 for 3 browsers
+      browsersInfo: [
+        { name: 'chrome', width: 800, height: 600 },
+        { name: 'firefox', width: 1024, height: 768 },
+        {
+          name: 'safari',
+          width: 375,
+          height: 667,
+          deviceScaleFactor: 2,
+          isMobile: true,
+        },
+      ],
     },
 
     baseURL: 'http://localhost:4200',
