@@ -4,7 +4,7 @@ import { MatchLevel, StitchMode } from '@applitools/eyes-playwright';
 
 export default defineConfig<EyesFixture>({
   // reporter: 'html',                                      // #75.1 first test
-  reporter: '@applitools/eyes-playwright/reporter',     // #75.1 then change
+  reporter: '@applitools/eyes-playwright/reporter',     // #75.2 then change
 
   use: {
     /* Configuration for Eyes VisualAI */
@@ -26,8 +26,8 @@ export default defineConfig<EyesFixture>({
 
       type: 'ufg',                    // added at #76 for 3 browsers
       browsersInfo: [
-        { name: 'chrome', width: 800, height: 600 },
-        { name: 'firefox', width: 1024, height: 768 },
+        { name: 'chrome', width: 1920, height: 1080 },
+        { name: 'firefox', width: 1920, height: 1080 },
         {
           name: 'safari',
           width: 375,
@@ -38,8 +38,8 @@ export default defineConfig<EyesFixture>({
       ],
     },
 
-    baseURL: 'http://localhost:4200',
-    viewport: { height: 720, width: 1280 }
+    baseURL: 'http://localhost:4200/',
+    viewport: { width: 1920, height: 1080 }
   },
 
   projects: [
