@@ -27,11 +27,11 @@ export default defineConfig<EyesFixture>({
       type: 'ufg',                    // added at #76 for 3 browsers
       browsersInfo: [
         { name: 'chrome', width: 1920, height: 1080 },
-        { name: 'firefox', width: 1920, height: 1080 },
+        { name: 'firefox', width: 1024, height: 768 },
         {
           name: 'safari',
-          width: 375,
-          height: 667,
+          width: 402,
+          height: 874,
           deviceScaleFactor: 2,
           isMobile: true,
         },
